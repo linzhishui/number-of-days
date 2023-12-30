@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: black;
+}
+
+.holiday {
+  background-color: greenyellow;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.holiday-info {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 20px;
+  gap: 10px;
+}
+
+.holiday.active {
+  flex-direction: column;
+}
+
+.holiday.active .holiday-info {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 0;
+}
+
+.holiday-num {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin: 20px;
+  gap: 5px;
+}
